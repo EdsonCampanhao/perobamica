@@ -1,0 +1,48 @@
+.carousel-title{
+    margin: 20px 0;
+    text-align: center;
+}
+.carousel {
+    width: 95%;
+    padding: 10px;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+.gallery {
+    height: 300px;
+    width: 1620px;
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+}
+.gallery div {
+    background-size: 300px;
+    background-position: center;
+    height: 300px;
+    width: 90px;
+    opacity: 0.5;
+    transition: 0.7s;
+}
+div .selected {
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-color: gray;
+    width: 300px;
+    opacity: 1;
+}
+@media screen and (min-width:1040px) {
+    .carousel {
+        height: 400px;
+    }
+    #gallery {
+        width: 3240px;
+    }
+    .gallery div {
+        height: 390px;
+        width: 180px;
+        background-size: 400px;
+    }
+    div .selected {
+        width: 400px;
+    }
+}

@@ -1,0 +1,6 @@
+*{padding: 0;
+margin: 0}
+:root{
+  --primary-color:rgb(96, 167, 167);
+  --secondary-color: #b2abab;
+}
