@@ -1,7 +1,7 @@
 .icon-wpp{
     margin: 0 20px 20px 0;
     position: fixed;
-    bottom: -50px;
+    bottom: 0;
     right: 0;
 
     background-image: url(wppIcon.png);
