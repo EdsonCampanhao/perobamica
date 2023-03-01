@@ -21,7 +21,7 @@ const Carousel = (props) => {
 
     return (
         <>
-            <h2 className='carousel-title'>{props.title}</h2>
+            <h2 className='carousel-title' id='carousel-title'>{props.title}</h2>
 
             <section className='carousel'>
                 <div className='gallery' id='gallery'>

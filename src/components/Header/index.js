@@ -34,7 +34,7 @@ const Header = (props) => {
                     </div>
                     <nav>
                     <ul className="lista__lista desabled">
-                        {props.itens.map((item,index)=><li key={index}>{item}</li>)}
+                        {props.itens.map((item,index)=><a href={props.href[index]}><li key={index}>{item}</li></a>)}
                     </ul>
                     </nav>
                 </div>

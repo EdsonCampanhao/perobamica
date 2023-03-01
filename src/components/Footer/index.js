@@ -5,7 +5,7 @@ import './Footer.css';
 
 const Footer = (props) => {
     return (
-        <section className="rodape">
+        <section className="rodape" id='rodape'>
             <div className='container'>
                 <div className="rodape__info">
                     <div className='contatos'>

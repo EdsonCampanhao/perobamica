@@ -39,6 +39,10 @@
     padding-top: 8px;
     text-decoration: underline;
 }
+.lista__lista a{
+    list-style: none;
+    color: aliceblue;
+}
 .menu ul li{
     list-style: none}
 

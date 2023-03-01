@@ -27,21 +27,9 @@ const Form = (props) => {
 
         console.log(orçamento)
 
-        // props.aoColaboradorCadastrado({
-        //     nome,
-        //     email,
-        //     telefone,
-
-
-        // })
-        // setNome('')
-        // setEmail('')
-        // setTelefone('')
-
-
     }
     return (
-        <section className='formulario'>
+        <section className='formulario' id='formulario'>
             <form encType="multipart/form-data" onSubmit={aoSalvar} action="https://formsubmit.co/edsonlemos0525@gmail.com" method="POST">
                 <h2>Faça um orçamento conosco, respondemos em até 24h</h2>
                 <TextField
