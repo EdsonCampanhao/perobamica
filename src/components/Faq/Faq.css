@@ -1,0 +1,45 @@
+.faq__cards .desabled{
+    display: none;
+}
+.faq__title{
+    text-align: center;
+    margin: 25px 0 40px;
+}
+.faq {
+    padding: 50px 36px;
+    background: #fff;
+}
+
+.faq__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 50px;
+}
+.faq__info {
+    width: 358px;
+    border: 1px solid #B2B2B2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.faq__titulo {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 283px;
+}
+
+.faq__icone {
+    height: 8px;
+    width: 15px;
+    margin: 10px 20px;
+    transition: 0.5s;
+}
+.invert{
+    transition: 0.5s;
+    transform: rotate(180deg);
+}

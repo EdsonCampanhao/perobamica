@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
    
-    background-color:var(--secondary-color);
+    background-color:gray;
 }
 .formulario h2{
     margin-bottom: 30px;

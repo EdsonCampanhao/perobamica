@@ -1,20 +1,25 @@
 .header{
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-end;
     padding: 0  10px  0 0;
     background-color: var(--principal-color);
     
 }
+
 .lista{
+    position: absolute;
+    left: 0;
     padding-left: 10px;
     color: transparent;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
 }
+
 .lista.on{
+    z-index: 1;
+    position: absolute;
     padding: 10px;
     color: aliceblue;
     align-items: flex-start;
@@ -41,6 +46,7 @@
  background-size:150px;
  background-position: center;
  margin-top: 8px;
+ filter: brightness(1000%);
     }
 @media screen and (min-width:600px){
 
@@ -61,7 +67,6 @@
         text-decoration: none;
     }
     .header .logo{
-    
     top: 0;
     }
     .header{
@@ -83,5 +88,8 @@
     }
     .menu ul li{
         font-size: 1.7rem;}
-    
+ 
+    .header .logo{
+            filter: blur(50%);
+            }
 }

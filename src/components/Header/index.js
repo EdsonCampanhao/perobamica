@@ -1,12 +1,10 @@
 import './Header.css'
 import './MenuIcon.css'
+import logo from './logo.png'
 
 const Header = (props) => {
-
     const openMenu = (event) => {
-
         const container = document.querySelector('.lista');
-
         if (event.target.attributes.length > 1) {
             event.target.nextSibling.classList.toggle('desabled')
             event.target.classList.toggle('on')
@@ -16,9 +14,6 @@ const Header = (props) => {
             event.target.parentNode.classList.toggle('on');
             container.classList.toggle('on')
         }
-
-
-
     }
 
 
@@ -39,7 +34,7 @@ const Header = (props) => {
                     </div>
                     <nav>
                     <ul className="lista__lista desabled">
-                        {props.itens.map(item=><li>{item}</li>)}
+                        {props.itens.map((item,index)=><li key={index}>{item}</li>)}
                     </ul>
                     </nav>
                 </div>
@@ -48,7 +43,7 @@ const Header = (props) => {
             </div>
             
                 <div className='logo'>
-
+                    <img src={logo} alt=' icone logo'></img>
                 </div>
 
         </section >
