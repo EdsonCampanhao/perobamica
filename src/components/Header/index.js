@@ -43,7 +43,7 @@ const Header = (props) => {
             </div>
             
                 <div className='logo'>
-                    <img src={logo} alt=' icone logo'></img>
+                    <img className='alt' alt='icone logo'></img>
                 </div>
 
         </section >

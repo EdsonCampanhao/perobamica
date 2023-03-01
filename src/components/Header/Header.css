@@ -5,6 +5,9 @@
     background-color: var(--principal-color);
     
 }
+.alt{
+    visibility: hidden;
+}
 
 .lista{
     position: absolute;
