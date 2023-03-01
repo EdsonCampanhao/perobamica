@@ -1,5 +1,7 @@
 
 import './App.css';
+import Header from './components/Header/index';
+import HeroSection from './components/HeroSection'
 import WppButton from './components/WppButton';
 import About from './components/About';
 import Carousel from './components/Carousel';
@@ -15,6 +17,8 @@ function App() {
 
   return (
     <div className="App">
+      <Header/>
+      <HeroSection/>
       <About title='Bem vindos ao site de moveis planejados da Perobamica' text='Somos uma empresa de confecção de móveis planejados localizada no Rio de Janeiro,
       e estamos prontos para atender sua demanda com preço competitivo e qualidade
       '/>

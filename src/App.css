@@ -1,6 +1,38 @@
-*{padding: 0;
-margin: 0}
-:root{
-  --primary-color:rgb(96, 167, 167);
-  --secondary-color: #b2abab;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@100;300;700&display=swap');
+
+:root {
+  --principal-font:'Montserrat', sans-serif;
+  --secundary-font: 'Roboto', sans-serif;
+
+  --principal-color: var(--blue);
+  --secundary-color: var(--brown);
+
+  --blue: #0ca5b0;
+  --brown: #4e3f30;
+  --silver: #a5b3aa;
+  --almost-white: #f8f4e4;
+  --white: #fefeeb;
+
+}
+
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5{
+  font-family:var(--secundary-font) ;
+  font-size: 2rem;
+}
+p{
+  font-family: var(--secundary-font);
+  font-size:1rem; 
+}
+@media screen and (min-width:1040px){
+  h1,h2,h3,h4,h5{
+    font-size:3rem;
+  }
+  p{
+    font-size:1.5em;
+  }
 }
