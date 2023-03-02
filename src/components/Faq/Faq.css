@@ -20,6 +20,7 @@
 }
 .faq__info {
     width: 358px;
+    max-width: 80%;
     border: 1px solid #B2B2B2;
     padding: 20px;
     display: flex;
