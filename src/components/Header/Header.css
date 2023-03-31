@@ -1,3 +1,4 @@
+
 .header {
     display: flex;
     justify-content: flex-end;
@@ -28,21 +29,26 @@
     color: aliceblue;
     align-items: flex-start;
     width: 30%;
-    height: 150px;
+    height: 300px;
     background-color: black;
     transition: 0.2s;
     border-radius: 0 0 100px;
 }
 
 .lista__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     position: absolute;
     transition: 1s;
     font-size: 20px;
+    font-weight: 700;
     padding-top: 8px;
-    text-decoration: underline;
+
 }
 
 .lista__lista a {
+    text-decoration: none;
     list-style: none;
     color: aliceblue;
 }
@@ -62,11 +68,20 @@
     filter: brightness(1000%);
 }
 
+.menu .types-of-furnishings {
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    width: 150px;
+    padding: 12px;
+    z-index: 1;
+
+}
+
 @media screen and (min-width:600px) {
 
     .lista {
         position: relative;
-
         justify-content: center;
     }
 
@@ -80,7 +95,7 @@
 
     .menu ul li {
         list-style: none;
-        text-decoration: none;
+
     }
 
     .header .logo {
@@ -100,6 +115,25 @@
         justify-content: center;
     }
 
+    .lista__lista {
+        flex-direction: row;
+    }
+    .menu .types-of-furnishings {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        padding: 20px;
+        position: absolute;
+        z-index: 1;
+        background-color: var(--principal-color);
+        transition: .7s;
+        opacity: 0;
+        gap: 12px;
+    }
+    .types-of-furnishings.open{
+        opacity:1;
+    }
+
 }
 
 @media screen and (min-width:1040px) {
@@ -115,16 +149,4 @@
         filter: blur(50%);
     }
 
-   .menu .types-of-furnishings{
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-        padding: 20px;
-        position: absolute;
-        z-index: 1;
-        background-color: var(--principal-color);
-        transition: .7s;
-        opacity: 0;
-        gap: 12px;
-    }
 }

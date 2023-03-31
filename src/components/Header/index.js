@@ -41,6 +41,10 @@ const Header = (props) => {
 
     ]
 
+    const menuWithClick=()=>{
+        const menu = document.querySelector('.types-of-furnishings');
+        menu.classList.toggle('open')
+    }
     const activeMenu = () => {
         const menu = document.querySelector('.types-of-furnishings');
         menu.style.opacity = "1"
@@ -68,9 +72,10 @@ const Header = (props) => {
                     <nav>
                         <ul className="lista__lista desabled">
 
-                            {props.itens.map((item, index) =>
-                                <a href={''}>
-                                    <li key={index}
+                            {props.itens.map(item =>
+                                <a href={'#'} key={item}>
+                                    <li 
+                                        onClick={item == 'Moveis' ? menuWithClick : null}
                                         onMouseLeave={item == 'Moveis' ? inactiveMenu : null}
                                         onMouseOver={item == 'Moveis' ? activeMenu : null}
                                         id={item}>{item}
@@ -78,7 +83,8 @@ const Header = (props) => {
                                         {
                                             item == 'Moveis' ?
                                                 <ul className='types-of-furnishings'>
-                                                    {typeOfFurnishings.map(item => <li>{item.type}</li>)}</ul>
+                                                    {typeOfFurnishings.map(item => <li key={item.type}>{item.type}</li>)}
+                                                    </ul>
                                                 : ''
 
                                         }
