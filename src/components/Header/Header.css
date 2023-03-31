@@ -1,15 +1,16 @@
-.header{
+.header {
     display: flex;
-    justify-content:flex-end;
-    padding: 0  10px  0 0;
+    justify-content: flex-end;
+    padding: 0 10px 0 0;
     background-color: var(--principal-color);
-    
+
 }
-.alt{
+
+.alt {
     visibility: hidden;
 }
 
-.lista{
+.lista {
     position: absolute;
     left: 0;
     padding-left: 10px;
@@ -20,7 +21,7 @@
     justify-content: space-between;
 }
 
-.lista.on{
+.lista.on {
     z-index: 1;
     position: absolute;
     padding: 10px;
@@ -30,73 +31,100 @@
     height: 150px;
     background-color: black;
     transition: 0.2s;
-    border-radius: 0  0 100px ;
+    border-radius: 0 0 100px;
 }
-.lista__lista{
-    position:absolute;
+
+.lista__lista {
+    position: absolute;
     transition: 1s;
     font-size: 20px;
     padding-top: 8px;
     text-decoration: underline;
 }
-.lista__lista a{
+
+.lista__lista a {
     list-style: none;
     color: aliceblue;
 }
-.menu ul li{
-    list-style: none}
 
-.header .logo{
- background-image:url(./logo.png);
- width: 90px;
- height:60px;
- background-size:150px;
- background-position: center;
- margin-top: 8px;
- filter: brightness(1000%);
-    }
-@media screen and (min-width:600px){
+.menu ul li {
+    list-style: none;
 
-    .lista{
-       position: relative;
-       
-       justify-content: center;
+}
+
+.header .logo {
+    background-image: url(./logo.png);
+    width: 90px;
+    height: 60px;
+    background-size: 150px;
+    background-position: center;
+    margin-top: 8px;
+    filter: brightness(1000%);
+}
+
+@media screen and (min-width:600px) {
+
+    .lista {
+        position: relative;
+
+        justify-content: center;
     }
-    .menu ul{
+
+    .menu ul {
         display: flex;
         gap: 50px;
         justify-content: center;
         color: aliceblue;
         position: relative;
     }
-    .menu ul li{
+
+    .menu ul li {
         list-style: none;
         text-decoration: none;
     }
-    .header .logo{
-    top: 0;
+
+    .header .logo {
+        top: 0;
     }
-    .header{
+
+    .header {
         justify-content: flex-start;
         flex-direction: row-reverse;
         padding: 0 0 0 10px;
     }
-    .lista{
+
+    .lista {
         position: relative;
         background-color: var(--principal-color);
         width: 100%;
         justify-content: center;
     }
-    
+
 }
-@media screen and (min-width:1040px){
-    .header{
+
+@media screen and (min-width:1040px) {
+    .header {
         justify-content: center;
     }
-    .menu ul li{
-        font-size: 1.7rem;}
- 
-    .header .logo{
-            filter: blur(50%);
-            }
+
+    .menu ul li {
+        font-size: 1.7rem;
+    }
+
+    .header .logo {
+        filter: blur(50%);
+    }
+
+   .menu .types-of-furnishings{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        padding: 20px;
+        position: absolute;
+        z-index: 1;
+        background-color: var(--principal-color);
+        transition: .7s;
+        opacity: 0;
+        gap: 12px;
+    }
 }

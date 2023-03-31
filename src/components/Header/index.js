@@ -4,6 +4,7 @@ import logo from './logo.png'
 
 const Header = (props) => {
     const openMenu = (event) => {
+
         const container = document.querySelector('.lista');
         if (event.target.attributes.length > 1) {
             event.target.nextSibling.classList.toggle('desabled')
@@ -16,9 +17,41 @@ const Header = (props) => {
         }
     }
 
+    const typeOfFurnishings = [
+        {
+            type: 'sala',
+            link: '/'
+        },
+        {
+            type: 'cozinha',
+            link: '/'
+        },
+        {
+            type: 'banheiro',
+            link: '/'
+        },
+        {
+            type: 'quarto',
+            link: '/'
+        },
+        {
+            type: 'área de lazer',
+            link: '/'
+        },
 
+    ]
+
+    const activeMenu = () => {
+        const menu = document.querySelector('.types-of-furnishings');
+        menu.style.opacity = "1"
+    }
+    const inactiveMenu = () => {
+        const menu = document.querySelector('.types-of-furnishings');
+        menu.style.opacity = "0"
+    }
 
     return (
+
         <section className='header'>
             <div className="lista">
 
@@ -33,18 +66,36 @@ const Header = (props) => {
                         </div>
                     </div>
                     <nav>
-                    <ul className="lista__lista desabled">
-                        {props.itens.map((item,index)=><a href={props.href[index]}><li key={index}>{item}</li></a>)}
-                    </ul>
+                        <ul className="lista__lista desabled">
+
+                            {props.itens.map((item, index) =>
+                                <a href={''}>
+                                    <li key={index}
+                                        onMouseLeave={item == 'Moveis' ? inactiveMenu : null}
+                                        onMouseOver={item == 'Moveis' ? activeMenu : null}
+                                        id={item}>{item}
+
+                                        {
+                                            item == 'Moveis' ?
+                                                <ul className='types-of-furnishings'>
+                                                    {typeOfFurnishings.map(item => <li>{item.type}</li>)}</ul>
+                                                : ''
+
+                                        }
+
+                                    </li></a>
+                            )}
+
+                        </ul>
                     </nav>
                 </div>
 
 
             </div>
-            
-                <div className='logo'>
-                    <img className='alt' alt='icone logo'></img>
-                </div>
+
+            <div className='logo'>
+                <img className='alt' alt='icone logo'></img>
+            </div>
 
         </section >
     )

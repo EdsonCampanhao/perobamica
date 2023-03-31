@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header itens={[ 'Moveis', 'Orçamento', 'Contatos']} href={['#carousel-title','#formulario','#rodape']} />
+      <Header itens={[  'Orçamento', 'Contatos','Moveis']} href={['#carousel-title','#formulario','#rodape']} />
       <HeroSection title='PerobaMica' text=' Tornando a sua casa um ambiente mais agradável e refinado'
          />
       <About title='Bem vindos ao site de moveis planejados da Perobamica' text='Somos uma empresa de confecção de móveis planejados localizada no Rio de Janeiro,
