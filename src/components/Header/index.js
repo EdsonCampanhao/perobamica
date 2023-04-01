@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 import './Header.css'
 import './MenuIcon.css'
-import logo from './logo.png'
+
 
 const Header = (props) => {
     const openMenu = (event) => {
@@ -20,28 +21,28 @@ const Header = (props) => {
     const typeOfFurnishings = [
         {
             type: 'sala',
-            link: '/'
+            link: '/livingroom'
         },
         {
             type: 'cozinha',
-            link: '/'
+            link: '/kitchen'
         },
         {
             type: 'banheiro',
-            link: '/'
+            link: '/bathroom'
         },
         {
             type: 'quarto',
-            link: '/'
+            link: '/bedroom'
         },
         {
-            type: 'área de lazer',
-            link: '/'
+            type: 'área externa',
+            link: '/externalarea'
         },
 
     ]
 
-    const menuWithClick=()=>{
+    const menuWithClick = () => {
         const menu = document.querySelector('.types-of-furnishings');
         menu.classList.toggle('open')
     }
@@ -73,23 +74,27 @@ const Header = (props) => {
                         <ul className="lista__lista desabled">
 
                             {props.itens.map(item =>
-                                <a href={'#'} key={item}>
-                                    <li 
-                                        onClick={item == 'Moveis' ? menuWithClick : null}
-                                        onMouseLeave={item == 'Moveis' ? inactiveMenu : null}
-                                        onMouseOver={item == 'Moveis' ? activeMenu : null}
+                                <Link to={item != 'Moveis' ? item == 'Inicio' ? '/' : `/${item}` : '#'
+
+
+                                } key={item}>
+                                    <li
+                                        onClick={item === 'Moveis' ? menuWithClick : null}
+                                        onMouseLeave={item === 'Moveis' ? inactiveMenu : null}
+                                        onMouseOver={item === 'Moveis' ? activeMenu : null}
                                         id={item}>{item}
 
                                         {
-                                            item == 'Moveis' ?
+                                            item === 'Moveis' ?
                                                 <ul className='types-of-furnishings'>
-                                                    {typeOfFurnishings.map(item => <li key={item.type}>{item.type}</li>)}
-                                                    </ul>
+                                                    {typeOfFurnishings.map(item => <Link to={item.link} > <li key={item.type}>{item.type}</li></Link>)}
+                                                </ul>
                                                 : ''
 
                                         }
 
-                                    </li></a>
+                                    </li>
+                                </Link>
                             )}
 
                         </ul>
@@ -98,11 +103,11 @@ const Header = (props) => {
 
 
             </div>
-
-            <div className='logo'>
-                <img className='alt' alt='icone logo'></img>
-            </div>
-
+            <Link to='/'>
+                <div className='logo'>
+                    <img className='alt' alt='icone logo'></img>
+                </div>
+            </Link>
         </section >
     )
 };
