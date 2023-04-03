@@ -49,6 +49,7 @@ const Header = (props) => {
     const activeMenu = () => {
         const menu = document.querySelector('.types-of-furnishings');
         menu.style.opacity = "1"
+        console.log('alo')
     }
     const inactiveMenu = () => {
         const menu = document.querySelector('.types-of-furnishings');

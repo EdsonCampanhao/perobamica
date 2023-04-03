@@ -8,15 +8,15 @@ const SectionGalery = (props) => {
 
 
     const activeGalery = (evento) => {
+
         setGalery(imageList)
-       
         evento.target.nextElementSibling.scrollIntoView({ behavior: 'smooth' });
         
 
     }
 
     const imageList=()=>{
-        return (<div className='imageList '>
+        return (<div className='imageList able'>
                     <ImageList variant="masonry" cols={2} gap={6} >
                         {props.pics.map((item, index) => (
                             <ImageListItem key={index}>

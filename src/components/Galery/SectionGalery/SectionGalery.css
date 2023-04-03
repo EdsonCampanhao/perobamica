@@ -23,11 +23,15 @@
     padding: 10px;
     position: relative;
     transition: 1s;
+    display: none;
 }
 
-.imageList.desable{
-    opacity: 0;
-   position: absolute;
-   left: -10px;
-    transition: 1s;
+.imageList.able{
+   display: block;
+}
+@media screen and (min-width:1024px) {
+    .galery__label{
+        width: 1000px;
+        height: 600px;
+    }
 }
