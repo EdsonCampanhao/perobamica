@@ -21,7 +21,7 @@ function Home() {
       <HeroSection title='PerobaMica' text=' Tornando a sua casa um ambiente mais agradável e refinado'
          />
       <About title='Bem vindos ao site de moveis planejados da Perobamica' text='Somos uma empresa especializada na confecção de Armarios embutidos, 
-      cozinhas planejadas, desenhos 3D tudo feito sob medida!
+      cozinhas planejadas e desenhos 3D, tudo feito sob medida!
       '/>
       <WppButton number='+552198775-5458' />
       <Galery/>

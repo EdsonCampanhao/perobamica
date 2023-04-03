@@ -1,3 +1,4 @@
+import LivingRoom from "pages/LivingRoom";
 
 
 const pics =
@@ -53,6 +54,51 @@ const pics =
 
 
         },
+
+    ],
+    livingRoom: [
+        {
+            src: 'https://uploaddeimagens.com.br/images/004/370/725/original/reck.jpg?1677586640',
+            alt: 'Imagem ilustrativa de moveis da sala'
+
+
+        },
+       
+        {
+            src: 'https://uploaddeimagens.com.br/images/004/370/723/original/portas.jpg?1677586594',
+            alt: 'Imagem ilustrativa de moveis da sala'
+
+
+        },
+        {
+            src: 'https://uploaddeimagens.com.br/images/004/370/688/full/ripado.jpg?1677585927',
+            alt: 'Imagem ilustrativa de moveis da sala'
+
+
+        },
+
+    ],
+    bedRoom: [
+        {
+            src: 'https://uploaddeimagens.com.br/images/004/370/688/full/ripado.jpg?1677585927',
+            alt: 'Imagem ilustrativa de moveis da sala'
+
+
+        },
+        {
+            src: 'https://uploaddeimagens.com.br/images/004/370/690/original/armario2.jpg?1677586055',
+            alt: 'Imagem ilustrativa de moveis da sala'
+
+
+        },
+        {
+            src: 'https://uploaddeimagens.com.br/images/004/370/723/original/portas.jpg?1677586594',
+            alt: 'Imagem ilustrativa de moveis da sala'
+
+
+        },
+       
+
     ]
 
 
