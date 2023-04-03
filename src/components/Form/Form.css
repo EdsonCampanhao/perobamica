@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
    
-    background-color:gray;
 }
 .formulario h2{
     margin-bottom: 30px;
@@ -11,7 +10,7 @@
 .formulario form{
     max-width: 80%;
     padding: 36px 64px;
-    border-radius: 20px;
+    background-color: #c8dbec;
 }
 @media screen and (min-width:1040px) {
 

@@ -1,0 +1,13 @@
+.galery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 48px 10px 0;
+    z-index: -1;
+}
+.galery img{
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px black;
+}
+

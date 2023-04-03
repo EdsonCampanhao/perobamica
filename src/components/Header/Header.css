@@ -30,15 +30,22 @@
     align-items: flex-start;
     width: 30%;
     height: 300px;
-    background-color: black;
+    backdrop-filter: blur(10px);
     transition: 0.2s;
     border-radius: 0 0 100px;
+    
+}
+.lista.on .menu .lista__lista{
+    opacity: 1;
+    pointer-events:all
 }
 
 .lista__lista {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     transition: 1s;
     font-size: 20px;
@@ -147,6 +154,9 @@
 
     .header .logo {
         filter: blur(50%);
+    }
+    .lista__lista {
+        opacity: 1;
     }
 
 }

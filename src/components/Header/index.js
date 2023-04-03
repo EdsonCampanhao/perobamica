@@ -4,15 +4,15 @@ import './MenuIcon.css'
 
 
 const Header = (props) => {
-    const openMenu = (event) => {
+    const switchMenu = (event) => {
 
         const container = document.querySelector('.lista');
         if (event.target.attributes.length > 1) {
-            event.target.nextSibling.classList.toggle('desabled')
+            
             event.target.classList.toggle('on')
             container.classList.toggle('on')
         } else {
-            event.target.parentNode.nextSibling.classList.toggle('desabled');
+            
             event.target.parentNode.classList.toggle('on');
             container.classList.toggle('on')
         }
@@ -62,7 +62,7 @@ const Header = (props) => {
 
                 <div className="menu">
 
-                    <div className='menu-hamburguer' data-menu='2' onClick={openMenu}>
+                    <div className='menu-hamburguer' data-menu='2' onClick={switchMenu}>
                         <div >
                         </div>
                         <div>
@@ -71,10 +71,10 @@ const Header = (props) => {
                         </div>
                     </div>
                     <nav>
-                        <ul className="lista__lista desabled">
+                        <ul className="lista__lista ">
 
                             {props.itens.map(item =>
-                                <Link to={item != 'Moveis' ? item == 'Inicio' ? '/' : `/${item}` : '#'
+                                <Link onClick={switchMenu} to={item != 'Moveis' ? item == 'Inicio' ? '/' : `/${item}` : '#'
 
 
                                 } key={item}>

@@ -1,0 +1,33 @@
+.galery__label{
+    position: relative;
+   background-size: 100%;
+   width: 340px;
+   height: 340px;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 12px;
+   box-shadow: 2px 2px 5px black;
+}
+.galery__title{
+   position: absolute;
+   bottom: 10px;
+   width: 100%;
+   text-align: center;
+   backdrop-filter: blur(10px);
+   color: azure;
+}
+.galery__pics{
+    position: relative;
+}
+.imageList{
+    padding: 10px;
+    position: relative;
+    transition: 1s;
+}
+
+.imageList.desable{
+    opacity: 0;
+   position: absolute;
+   left: -10px;
+    transition: 1s;
+}

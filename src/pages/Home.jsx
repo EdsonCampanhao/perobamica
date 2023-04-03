@@ -9,6 +9,7 @@ import imgPath from 'components/Carousel/imgPath';
 import Faq from 'components/Faq/Faq'
 import Form from 'components/Form';
 import Footer from 'components/Footer';
+import Galery from 'components/Galery/Galery';
 
 
 
@@ -19,15 +20,11 @@ function Home() {
      <Header itens={[ 'Inicio','Orçamento','Moveis']}/>
       <HeroSection title='PerobaMica' text=' Tornando a sua casa um ambiente mais agradável e refinado'
          />
-      <About title='Bem vindos ao site de moveis planejados da Perobamica' text='Somos uma empresa de confecção de móveis planejados localizada no Rio de Janeiro,
-      e estamos prontos para atender sua demanda com preço competitivo e qualidade
+      <About title='Bem vindos ao site de moveis planejados da Perobamica' text='Somos uma empresa especializada na confecção de Armarios embutidos, 
+      cozinhas planejadas, desenhos 3D tudo feito sob medida!
       '/>
       <WppButton number='+552198775-5458' />
-      <Carousel
-        title='alguns de nossos serviços:'
-        imagens={imgPath.map(obj =>
-          obj.path)}
-      />
+      <Galery/>
       <Faq/>
       <Form />
       <Footer
