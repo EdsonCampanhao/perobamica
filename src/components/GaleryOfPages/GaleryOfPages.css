@@ -2,13 +2,13 @@
 
 
 
-.image__pic{
+.image__pic {
     border-radius: 10px;
 }
-@media screen and (min-width:1040px) {
-    #image__list{
+
+#image__list {
     padding: 05%;
     background-color: var(--form-color);
 
-}
+
 }
