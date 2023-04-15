@@ -1,0 +1,10 @@
+@import '../../App.css';
+
+.image__list{
+    padding: 24px;
+    background-color: var(--form-color);
+
+}
+.image__pic{
+    border-radius: 50px;
+}

@@ -4,20 +4,9 @@ import './MenuIcon.css'
 
 
 const Header = (props) => {
-    const switchMenu = (event) => {
 
-        const container = document.querySelector('.lista');
-        if (event.target.attributes.length > 1) {
-            
-            event.target.classList.toggle('on')
-            container.classList.toggle('on')
-        } else {
-            
-            event.target.parentNode.classList.toggle('on');
-            container.classList.toggle('on')
-        }
-    }
 
+    const menu = ['Inicio', 'Orçamento', 'Moveis'];
     const typeOfFurnishings = [
         {
             type: 'sala',
@@ -37,6 +26,19 @@ const Header = (props) => {
         },
     ]
 
+    const switchMenu = (event) => {
+
+        const container = document.querySelector('.lista');
+
+        if (event.target.attributes.length > 1) {
+            event.target.classList.toggle('on')
+            container.classList.toggle('on')
+        } else {
+            event.target.parentNode.classList.toggle('on');
+            container.classList.toggle('on')
+        }
+    }
+
     const menuWithClick = () => {
         const menu = document.querySelector('.types-of-furnishings');
         menu.classList.toggle('open')
@@ -52,12 +54,9 @@ const Header = (props) => {
     }
 
     return (
-
         <section className='header'>
             <div className="lista">
-
                 <div className="menu">
-
                     <div className='menu-hamburguer' data-menu='2' onClick={switchMenu}>
                         <div >
                         </div>
@@ -68,11 +67,8 @@ const Header = (props) => {
                     </div>
                     <nav>
                         <ul className="lista__lista ">
-
-                            {props.itens.map(item =>
+                            {menu.map(item =>
                                 <Link onClick={switchMenu} to={item != 'Moveis' ? item == 'Inicio' ? '/' : `/${item}` : '#'
-
-
                                 } key={item}>
                                     <li
                                         onClick={item === 'Moveis' ? menuWithClick : null}
