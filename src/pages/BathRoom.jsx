@@ -3,6 +3,9 @@ import Footer from "components/Footer"
 import '../App.css';
 import pics from "components/Galery/pics";
 import GaleryOfPages from "components/GaleryOfPages";
+import HeroSection from "components/HeroSection";
+import About from "components/About";
+
 
 
 const BathRoom = () => {

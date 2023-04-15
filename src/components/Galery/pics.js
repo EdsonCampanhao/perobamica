@@ -150,44 +150,14 @@ const pics =
             alt: 'Imagem ilustrativa de moveis do banheiro'
         }
     ],
-    BedRoom: [{
-        src: 'https://uploaddeimagens.com.br/images/004/370/688/full/ripado.jpg?1677585927',
-        alt: 'Imagem ilustrativa de moveis da sala'
-    },
-    {
-        src: 'https://uploaddeimagens.com.br/images/004/370/690/original/armario2.jpg?1677586055',
-        alt: 'Imagem ilustrativa de moveis da sala'
-    },
-    {
-        src: 'https://uploaddeimagens.com.br/images/004/370/723/original/portas.jpg?1677586594',
-        alt: 'Imagem ilustrativa de moveis da sala'
-    },
+    BedRoom: [
+   
     {
         src: bedRoom1,
         alt: 'Imagem ilustrativa de moveis da sala'
     },
     {
-        src: bedRoom2,
-        alt: 'Imagem ilustrativa de moveis da sala'
-    },
-    {
-        src: bedRoom3,
-        alt: 'Imagem ilustrativa de moveis da sala'
-    },
-    {
-        src: bedRoom4,
-        alt: 'Imagem ilustrativa de moveis da sala'
-    },
-    {
         src: bedRoom5,
-        alt: 'Imagem ilustrativa de moveis da sala'
-    },
-    {
-        src: bedRoom6,
-        alt: 'Imagem ilustrativa de moveis da sala'
-    },
-    {
-        src: bedRoom7,
         alt: 'Imagem ilustrativa de moveis da sala'
     },
     {
