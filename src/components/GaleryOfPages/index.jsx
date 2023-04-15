@@ -4,7 +4,7 @@ import './GaleryOfPages.css'
 
 const GaleryOfPages=(props)=>{
     return(
-        <ImageList variant="masonry" className='image__list' cols={2} gap={6} >
+        <ImageList variant="masonry" id='image__list' cols={2} gap={6} >
                         {props.pics.map((item, index) => (
                             <ImageListItem key={index}>
                                 <img className='image__pic'

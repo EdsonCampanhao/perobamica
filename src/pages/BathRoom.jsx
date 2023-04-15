@@ -9,9 +9,10 @@ const BathRoom = () => {
     return (
         <section>
             <header>
-                <Header/>
+                <Header />
             </header>
             <main>
+               
                 <GaleryOfPages pics={pics.BathRoom} />
             </main>
             <footer>
