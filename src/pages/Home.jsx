@@ -26,7 +26,9 @@ function Home() {
       <WppButton number='+552198775-5458' />
       <Galery/>
       <Faq/>
+      <div className='formContainer'>
       <Form />
+      </div>
       <Footer
         number='(21)-30496746/98775-5458'
         email='perobamica@hotmail.com'

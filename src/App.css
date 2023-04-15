@@ -13,6 +13,8 @@
   --almost-white: #f8f4e4;
   --white: #fefeeb;
 
+  --form-color:#c8dbec;
+
 }
 html{scroll-behavior: smooth;}
 
@@ -35,5 +37,8 @@ p{
   }
   p{
     font-size:1.5em;
+  }
+  .formContainer{
+    background-color:var(--form-color);
   }
 }

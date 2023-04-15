@@ -35,11 +35,6 @@ const Header = (props) => {
             type: 'quarto',
             link: '/bedroom'
         },
-        {
-            type: 'área externa',
-            link: '/externalarea'
-        },
-
     ]
 
     const menuWithClick = () => {

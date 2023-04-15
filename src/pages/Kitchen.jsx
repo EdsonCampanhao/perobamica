@@ -1,6 +1,8 @@
 import Header from "components/Header"
 import Footer from "components/Footer"
 import '../App.css';
+import pics from "components/Galery/pics";
+import GaleryOfPages from "components/GaleryOfPages";
 
 
 
@@ -9,7 +11,7 @@ const Kitchen = () => {
         <section>
             <Header itens={[ 'Inicio','Orçamento','Moveis']}/>
 
-            <h1> finje que aqui estão as fotos </h1>
+            <GaleryOfPages pics={pics.kitchen}/>
 
             <Footer
                 number='(21)-30496746/98775-5458'
