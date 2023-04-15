@@ -13,12 +13,7 @@ import livingRoom5 from './image/sala-5.jpeg';
 import livingRoom6 from './image/sala-6.jpeg';
 
 import bedRoom1 from './image/quarto-1.jpeg';
-import bedRoom2 from './image/quarto-2.jpeg';
-import bedRoom3 from './image/quarto-3.jpeg';
-import bedRoom4 from './image/quarto-4.jpeg';
 import bedRoom5 from './image/quarto-5.jpeg';
-import bedRoom6 from './image/quarto-6.jpeg';
-import bedRoom7 from './image/quarto-7.jpeg';
 import bedRoom8 from './image/quarto-8.jpeg';
 import bedRoom9 from './image/quarto-9.jpeg';
 import bedRoom10 from './image/quarto-10.jpeg';
@@ -177,22 +172,6 @@ const pics =
             alt: 'Imagem ilustrativa de moveis da sala'
         },
         {
-            src: 'https://uploaddeimagens.com.br/images/004/370/723/original/portas.jpg?1677586594',
-            alt: 'Imagem ilustrativa de moveis da sala'
-        },
-        {
-            src: 'https://uploaddeimagens.com.br/images/004/370/688/full/ripado.jpg?1677585927',
-            alt: 'Imagem ilustrativa de moveis da sala'
-        },
-        {
-            src: livingRoom1,
-            alt: 'Imagem ilustrativa de moveis da sala'
-        },
-        {
-            src: livingRoom2,
-            alt: 'Imagem ilustrativa de moveis da sala'
-        },
-        {
             src: livingRoom3,
             alt: 'Imagem ilustrativa de moveis da sala'
         },
@@ -200,14 +179,7 @@ const pics =
             src: livingRoom4,
             alt: 'Imagem ilustrativa de moveis da sala'
         },
-        {
-            src: livingRoom5,
-            alt: 'Imagem ilustrativa de moveis da sala'
-        },
-        {
-            src: livingRoom6,
-            alt: 'Imagem ilustrativa de moveis da sala'
-        },
+       
     ],
     kitchen: [
         {

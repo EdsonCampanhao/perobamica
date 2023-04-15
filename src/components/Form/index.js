@@ -30,7 +30,7 @@ const Form = (props) => {
     }
     return (
         <section className='formulario' id='formulario'>
-            <form encType="multipart/form-data" onSubmit={aoSalvar} action="https://formsubmit.co/edsonlemos0525@gmail.com" method="POST">
+            <form encType="multipart/form-data" onSubmit={aoSalvar} action="https://formsubmit.co/perobamica@hotmail.com" method="POST">
                 <h2>Faça um orçamento conosco, respondemos em até 24h</h2>
                 <TextField
                     type='text'
