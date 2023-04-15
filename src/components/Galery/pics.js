@@ -26,12 +26,10 @@ import bedRoom10 from './image/quarto-10.jpeg';
 import kitchen1 from './image/cozinha-1.jpeg';
 import kitchen2 from './image/cozinha-2.jpeg';
 import kitchen3 from './image/cozinha-3.jpeg';
-import kitchen4 from './image/cozinha-4.jpeg';
 import kitchen5 from './image/cozinha-5.jpeg';
 import kitchen6 from './image/cozinha-6.jpeg';
 import kitchen7 from './image/cozinha-7.jpeg';
 import kitchen8 from './image/cozinha-8.jpeg';
-import kitchen9 from './image/cozinha-9.jpeg';
 import kitchen10 from './image/cozinha-10.jpeg';
 import kitchen11 from './image/cozinha-11.jpeg';
 const pics =
@@ -240,10 +238,7 @@ const pics =
             src: kitchen3,
             alt: 'Imagem ilustrativa de moveis da cozinha'
         },
-        {
-            src: kitchen4,
-            alt: 'Imagem ilustrativa de moveis da cozinha'
-        },
+        
         {
             src: kitchen5,
             alt: 'Imagem ilustrativa de moveis da cozinha'
@@ -258,10 +253,6 @@ const pics =
         },
         {
             src: kitchen8,
-            alt: 'Imagem ilustrativa de moveis da cozinha'
-        },
-        {
-            src: kitchen9,
             alt: 'Imagem ilustrativa de moveis da cozinha'
         },
         {
