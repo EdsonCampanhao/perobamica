@@ -18,17 +18,17 @@ const open=(event)=>{
             <h2 className='faq__title'> Perguntas frequentes</h2>
             <div className="faq__cards">
                 <article className="faq__info">
-                    <h3 className="faq__titulo">Vocês parcelam o serviço</h3>
+                    <h3 className="faq__titulo">Vocês parcelam o serviço?</h3>
                     <img src={iconFaq} onClick={open} alt="" className="faq__icone" />
                     <p className="faq__resposta desabled">Sim, parcelamos em até 12x com os juros do cartão.</p>
                 </article>
                 <article className="faq__info">
                     <h3 className="faq__titulo">Qual o tipo de material usado nos móveis?</h3>
                     <img src={iconFaq} alt="seta de abertura da sanfona" onClick={open}  className="faq__icone" />
-                    <p className="faq__resposta desabled">Usamos madeira, mdf e compensado, à depender da opção do cliente.</p>
+                    <p className="faq__resposta desabled">Usamos madeira, mdf e compensado, a depender da opção do cliente.</p>
                 </article>
                 <article className="faq__info">
-                    <h3 className="faq__titulo">Pagando a vista tem desconto?</h3>
+                    <h3 className="faq__titulo">Pagando à vista tem desconto?</h3>
                     <img src={iconFaq} alt="seta de abertura da sanfona" onClick={open}  className="faq__icone" />
                     <p className="faq__resposta desabled">Pagamento no pix ou no dinheiro recebe um desconto de 5%.</p>
                 </article>
