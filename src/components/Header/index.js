@@ -6,7 +6,7 @@ import './MenuIcon.css'
 const Header = (props) => {
 
 
-    const menu = ['Inicio', 'Orçamento', 'Moveis'];
+    const menu = ['Inicio', 'Orçamento', 'Móveis'];
     const typeOfFurnishings = [
         {
             type: 'sala',
@@ -68,16 +68,16 @@ const Header = (props) => {
                     <nav>
                         <ul className="lista__lista ">
                             {menu.map(item =>
-                                <Link onClick={switchMenu} to={item != 'Moveis' ? item == 'Inicio' ? '/' : `/${item}` : '#'
+                                <Link onClick={switchMenu} to={item !== 'Móveis' ? item === 'Inicio' ? '/' : `/${item}` : '#'
                                 } key={item}>
                                     <li
-                                        onClick={item === 'Moveis' ? menuWithClick : null}
-                                        onMouseLeave={item === 'Moveis' ? inactiveMenu : null}
-                                        onMouseOver={item === 'Moveis' ? activeMenu : null}
+                                        onClick={item === 'Móveis' ? menuWithClick : null}
+                                        onMouseLeave={item === 'Móveis' ? inactiveMenu : null}
+                                        onMouseOver={item === 'Móveis' ? activeMenu : null}
                                         id={item}>{item}
 
                                         {
-                                            item === 'Moveis' ?
+                                            item === 'Móveis' ?
                                                 <ul className='types-of-furnishings'>
                                                     {typeOfFurnishings.map(item => <Link to={item.link} > <li key={item.type}>{item.type}</li></Link>)}
                                                 </ul>

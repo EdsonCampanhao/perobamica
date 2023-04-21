@@ -4,8 +4,6 @@ import Header from 'components/Header/index';
 import HeroSection from 'components/HeroSection'
 import WppButton from 'components/WppButton';
 import About from 'components/About';
-import Carousel from 'components/Carousel';
-import imgPath from 'components/Carousel/imgPath';
 import Faq from 'components/Faq/Faq'
 import Form from 'components/Form';
 import Footer from 'components/Footer';
@@ -19,11 +17,9 @@ function Home() {
     <div className="App">
       <header>
         <Header />
-        <HeroSection title='PerobaMica' text=' Tornando a sua casa um ambiente mais agradável e refinado'
+        <HeroSection 
         />
-        <About title='Bem vindos ao site de moveis planejados da Perobamica' text='Somos uma empresa especializada na confecção de Armarios embutidos, 
-      cozinhas planejadas e desenhos 3D, tudo feito sob medida!
-      '/>
+        <About  />
       </header>
 
       <main>
